@@ -11,7 +11,7 @@
   <meta property="og:description" content="A Spirit-filled family church — worship, the Word, prayer and community." />
   <meta property="og:type" content="website" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8C%BE%3C/text%3E%3C/svg%3E" />
 
   <!-- Fonts: Fraunces (editorial serif display, incl. italic), Inter (body/labels) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,9 +25,9 @@
       theme: {
         extend: {
           colors: {
-            ink: '#0A130F', ash: '#10201A', coal: '#16261F',
-            ember: '#2FB37A', blaze: '#0E7A52', gold: '#E8C15A',
-            bone: '#EDF5EF',
+            ink: '#081C0F', ash: '#0F2A18', coal: '#153420',
+            ember: '#3C6B32', blaze: '#123A1E', gold: '#DDB049',
+            bone: '#F7F4EA',
           },
           fontFamily: {
             display: ['Fraunces', 'Georgia', 'serif'],
@@ -44,7 +44,7 @@
 
 <body class="bg-ink text-bone font-sans antialiased selection:bg-ember selection:text-ink">
 
-  <!-- Ignite intro -->
+  <!-- Intro reveal -->
   <div id="intro" class="fixed inset-0 z-[100] flex items-center justify-center bg-ink">
     <div class="text-center">
       <div class="intro-spark mx-auto mb-5 h-2 w-2 rounded-full bg-ember"></div>
@@ -52,18 +52,21 @@
     </div>
   </div>
 
-  <!-- Scroll progress fire line -->
+  <!-- Scroll progress line -->
   <div id="progress" class="fixed left-0 top-0 z-[60] h-[3px] w-0 bg-gradient-to-r from-gold via-ember to-blaze"></div>
 
   <!-- Nav -->
   <header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-      <a href="#top" class="group flex items-center gap-2.5">
-        <span class="ember-dot h-2.5 w-2.5 rounded-full bg-ember"></span>
+      <a href="#top" class="group flex items-center gap-3">
+        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-bone p-1.5 shadow-lg">
+          <img src="assets/img/logo-real.png" alt="Field of Faith Revival Centre logo" width="40" height="40" class="h-full w-full object-contain" />
+        </span>
         <span class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-bone">Field of Faith</span>
       </a>
       <nav class="hidden items-center gap-9 text-sm font-medium text-bone/70 md:flex">
         <a href="#welcome" class="navlink">Welcome</a>
+        <a href="#vision" class="navlink">Vision</a>
         <a href="#expect" class="navlink">What to expect</a>
         <a href="#times" class="navlink">Times &amp; place</a>
         <a href="#ministries" class="navlink">Ministries</a>
@@ -118,14 +121,16 @@
             You were<br>made for<br><span class="text-ember">more.</span>
           </h2>
           <div class="reveal mt-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-            <img src="assets/img/welcome.jpg" alt="Field Of Faith congregation gathered in worship" loading="lazy" width="800" height="600" class="h-64 w-full object-cover lg:h-80" />
+            <img src="assets/img/pastor-real.jpg" alt="Pastor Ntshengedzani R Nemdaka preaching at Field of Faith Revival Centre" loading="lazy" width="800" height="800" class="h-64 w-full object-cover object-top lg:h-80" />
           </div>
+          <p class="reveal mt-3 text-sm uppercase tracking-[0.2em] text-gold/70">A voice for faith &amp; revival</p>
         </div>
         <div class="lg:col-span-7">
           <div class="reveal space-y-6 text-lg leading-relaxed text-bone/75">
             <p>We are an ordinary people who have met an extraordinary God. Under the leadership of
-              <strong class="font-semibold text-bone">Pastor Ntshengedzani R Nemdaka</strong>, Field Of Faith
-              exists to see lives filled with hope — in Thohoyandou and across the community.</p>
+              <strong class="font-semibold text-bone">Pastor Ntshengedzani R Nemdaka</strong> — a voice for
+              faith and revival — Field Of Faith exists to see lives filled with hope, teaching the
+              uncompromised word of God and equipping believers to walk boldly in grace and faith.</p>
             <p>Sundays are warm and unhurried. You'll find honest worship, a message rooted in Scripture,
               and people who will know your name. Come as you are. Leave encouraged and sent.</p>
           </div>
@@ -134,6 +139,32 @@
             <div><div class="stat font-display text-4xl text-gold">1</div><div class="statlabel">Family, many stories</div></div>
             <div><div class="stat font-display text-4xl text-gold">All</div><div class="statlabel">Are welcome here</div></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISION & MISSION ============ -->
+    <section id="vision" class="relative py-28 lg:py-36">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="max-w-2xl">
+          <p class="eyebrow reveal">Our vision &amp; mission</p>
+          <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">Grace. Faith.
+            <span class="italic bg-gradient-to-br from-gold via-ember to-blaze bg-clip-text text-transparent">Hope</span> in Christ.</h2>
+        </div>
+        <div class="mt-14 grid gap-6 md:grid-cols-2">
+          <article class="reveal rounded-2xl border border-white/10 bg-white/[0.03] p-9">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-bone/40">01 — Vision</p>
+            <h3 class="mt-4 font-display text-2xl text-bone">Our vision</h3>
+            <p class="mt-4 leading-relaxed text-bone/70">Evangelizing the word and reconciling man with God
+              Almighty; spreading the message of grace, faith and hope in Christ Jesus through any available
+              voice — word of mouth, literature and media.</p>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-gradient-to-br from-blaze to-ink p-9">
+            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-gold/60">02 — Mission</p>
+            <h3 class="mt-4 font-display text-2xl text-bone">Our mission</h3>
+            <p class="mt-4 leading-relaxed text-bone/70">To impact the world through preaching, teaching and
+              demonstrating the word of Faith.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -212,16 +243,16 @@
           <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">Come and see</h2>
           <div class="mt-10 divide-y divide-white/10 border-y border-white/10">
             <div class="svc reveal">
-              <div><div class="svc-name">Sunday Celebration</div><div class="svc-sub">Worship · Word · Family</div></div>
-              <div class="svc-time">09:00</div>
+              <div><div class="svc-name">Main Service</div><div class="svc-sub">Sundays · Worship · Word · Family</div></div>
+              <div class="svc-time">10:00</div>
             </div>
             <div class="svc reveal">
-              <div><div class="svc-name">Bible Study &amp; Prayer</div><div class="svc-sub">Wednesdays</div></div>
+              <div><div class="svc-name">Bible Study</div><div class="svc-sub">Wednesdays</div></div>
               <div class="svc-time">18:00</div>
             </div>
             <div class="svc reveal">
-              <div><div class="svc-name">Field of Faith Night</div><div class="svc-sub">Fridays · Worship &amp; intercession</div></div>
-              <div class="svc-time">18:30</div>
+              <div><div class="svc-name">Prayer Night</div><div class="svc-sub">Fridays · Worship &amp; intercession</div></div>
+              <div class="svc-time">19:00</div>
             </div>
           </div>
           <p class="reveal mt-8 flex items-start gap-3 text-bone/70">
@@ -247,7 +278,7 @@
         <div class="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           <div class="min group reveal"><h3 class="min-title">Prayer &amp; Intercession</h3><p class="min-body">The engine room. We stand in the gap for our town.</p></div>
           <div class="min group reveal"><h3 class="min-title">Worship &amp; Praise</h3><p class="min-body">Voices and instruments lifted with everything we have.</p></div>
-          <div class="min group reveal"><h3 class="min-title">Youth on Fire</h3><p class="min-body">The next generation, discipled and unashamed.</p></div>
+          <div class="min group reveal"><h3 class="min-title">Youth Alive</h3><p class="min-body">The next generation, discipled and unashamed.</p></div>
           <div class="min group reveal"><h3 class="min-title">Community Outreach</h3><p class="min-body">Faith with feet — feeding, visiting, loving Thohoyandou.</p></div>
         </div>
       </div>
@@ -264,7 +295,7 @@
           Bring<br><span class="bg-gradient-to-br from-gold via-ember to-blaze bg-clip-text text-transparent">everything.</span>
         </h2>
         <p class="reveal mx-auto mt-8 max-w-xl text-lg text-bone/75">
-          Your questions, your doubts, your family, your hope. There's room at this fire for all of it — and for you.
+          Your questions, your doubts, your family, your hope. There's room in this field for all of it — and for you.
         </p>
         <div class="reveal mt-10 flex flex-wrap justify-center gap-4">
           <a href="#times" class="cta">See service times</a>
@@ -278,7 +309,7 @@
       <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 lg:flex-row lg:items-center lg:px-10">
         <div class="max-w-xl">
           <p class="eyebrow reveal">Give</p>
-          <h2 class="reveal mt-4 font-display text-4xl text-bone md:text-5xl">Fuel the fire</h2>
+          <h2 class="reveal mt-4 font-display text-4xl text-bone md:text-5xl">Sow into the harvest</h2>
           <p class="reveal mt-4 text-bone/70">Every gift keeps the doors open and the outreach moving. Thank you for sowing into what God is doing in Thohoyandou.</p>
         </div>
         <a href="#visit" class="cta reveal shrink-0">Give an offering</a>
@@ -291,8 +322,10 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-10">
       <div class="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
         <div>
-          <div class="flex items-center gap-2.5">
-            <span class="h-2.5 w-2.5 rounded-full bg-ember"></span>
+          <div class="flex items-center gap-3">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-bone p-2 shadow-lg">
+              <img src="assets/img/logo-real.png" alt="Field of Faith Revival Centre logo" width="48" height="48" class="h-full w-full object-contain" />
+            </span>
             <span class="font-display text-2xl tracking-[0.18em] text-bone">FIELD&nbsp;OF&nbsp;FAITH</span>
           </div>
           <p class="mt-4 max-w-sm text-sm leading-relaxed text-bone/55">
@@ -302,6 +335,7 @@
         </div>
         <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-bone/60">
           <a href="#welcome" class="footlink">Welcome</a>
+          <a href="#vision" class="footlink">Vision</a>
           <a href="#times" class="footlink">Times &amp; place</a>
           <a href="#expect" class="footlink">What to expect</a>
           <a href="#ministries" class="footlink">Ministries</a>

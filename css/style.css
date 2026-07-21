@@ -1,12 +1,12 @@
-/* Revival Fire Ministry — custom styles atop Tailwind.
-   Concept: sacred fire in the Kalahari night. */
+/* Field of Faith — custom styles atop Tailwind.
+   Concept: a harvest field ripe for God, golden light at dusk. */
 
 :root {
-  --ink: #0A130F;
-  --ember: #2FB37A;
-  --blaze: #0E7A52;
-  --gold: #E8C15A;
-  --bone: #EDF5EF;
+  --ink: #081C0F;
+  --ember: #3C6B32;
+  --blaze: #123A1E;
+  --gold: #DDB049;
+  --bone: #F7F4EA;
 }
 
 html { scroll-behavior: smooth; }
@@ -15,14 +15,14 @@ body { overflow-x: hidden; }
 /* ---- atmospheric glow behind heroes ---- */
 .hero-glow {
   background:
-    radial-gradient(60% 55% at 50% 108%, rgba(47,179,122,0.30), transparent 60%),
-    radial-gradient(40% 40% at 80% 100%, rgba(232,193,90,0.18), transparent 60%),
-    radial-gradient(45% 45% at 15% 95%, rgba(14,122,82,0.20), transparent 65%);
+    radial-gradient(60% 55% at 50% 108%, rgba(60,107,50,0.30), transparent 60%),
+    radial-gradient(40% 40% at 80% 100%, rgba(221,176,73,0.18), transparent 60%),
+    radial-gradient(45% 45% at 15% 95%, rgba(18,58,30,0.35), transparent 65%);
 }
 
 /* ---- nav ---- */
 #nav.scrolled {
-  background: rgba(10,19,15,0.72);
+  background: rgba(8,28,15,0.72);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
@@ -34,35 +34,35 @@ body { overflow-x: hidden; }
 }
 .navlink:hover::after { width: 100%; }
 
-.ember-dot { box-shadow: 0 0 14px 2px rgba(47,179,122,0.8); animation: pulse 2.4s ease-in-out infinite; }
+.ember-dot { box-shadow: 0 0 14px 2px rgba(221,176,73,0.8); animation: pulse 2.4s ease-in-out infinite; }
 @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .55; transform: scale(1.35); } }
 
 /* ---- buttons ---- */
 .cta, .cta-sm {
   display: inline-flex; align-items: center; gap: .5rem;
-  background: linear-gradient(120deg, var(--ember), var(--blaze));
-  color: #1a0d06; font-weight: 700; letter-spacing: .01em;
+  background: linear-gradient(120deg, var(--gold), #c99a3f);
+  color: #0d2412; font-weight: 700; letter-spacing: .01em;
   border-radius: 999px; transition: transform .3s, box-shadow .3s, filter .3s;
-  box-shadow: 0 10px 30px -10px rgba(47,179,122,0.6);
+  box-shadow: 0 10px 30px -10px rgba(221,176,73,0.55);
 }
 .cta { padding: .95rem 1.9rem; font-size: 1rem; }
 .cta-sm { padding: .6rem 1.2rem; font-size: .82rem; }
-.cta:hover, .cta-sm:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 18px 40px -12px rgba(47,179,122,0.75); }
+.cta:hover, .cta-sm:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 18px 40px -12px rgba(221,176,73,0.7); }
 
 .cta-ghost {
   display: inline-flex; align-items: center; gap: .5rem;
   padding: .95rem 1.7rem; border-radius: 999px; font-weight: 600; color: var(--bone);
   border: 1px solid rgba(237,245,239,0.22); transition: border-color .3s, background .3s, transform .3s;
 }
-.cta-ghost:hover { border-color: rgba(232,193,90,0.7); background: rgba(232,193,90,0.06); transform: translateY(-2px); }
+.cta-ghost:hover { border-color: rgba(221,176,73,0.7); background: rgba(221,176,73,0.06); transform: translateY(-2px); }
 
 /* ---- shared bits ---- */
 .eyebrow {
   display: inline-flex; align-items: center; gap: .6rem;
   font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .3em;
-  color: rgba(232,193,90,0.9);
+  color: rgba(221,176,73,0.9);
 }
-.eyebrow::before { content: '🔥'; font-size: .8rem; filter: grayscale(0.1); }
+.eyebrow::before { content: '🌾'; font-size: .8rem; filter: grayscale(0.1); }
 
 .statlabel { margin-top: .35rem; font-size: .8rem; color: rgba(237,245,239,0.55); line-height: 1.3; }
 
@@ -75,18 +75,18 @@ body { overflow-x: hidden; }
 }
 .card::before {
   content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity .45s;
-  background: radial-gradient(80% 80% at 50% 120%, rgba(47,179,122,0.22), transparent 60%);
+  background: radial-gradient(80% 80% at 50% 120%, rgba(60,107,50,0.22), transparent 60%);
 }
-.card:hover { transform: translateY(-8px); border-color: rgba(232,193,90,0.35); }
+.card:hover { transform: translateY(-8px); border-color: rgba(221,176,73,0.35); }
 .card:hover::before { opacity: 1; }
-.card-num { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: rgba(232,193,90,0.28); letter-spacing: .05em; }
-.card:hover .card-num { color: rgba(232,193,90,0.6); transition: color .45s; }
+.card-num { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: rgba(221,176,73,0.28); letter-spacing: .05em; }
+.card:hover .card-num { color: rgba(221,176,73,0.6); transition: color .45s; }
 .card-title { margin-top: .6rem; font-size: 1.4rem; font-weight: 700; color: var(--bone); }
 .card-body { margin-top: .75rem; color: rgba(237,245,239,0.68); line-height: 1.6; }
 
 /* ---- service list ---- */
 .svc { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem .25rem; transition: padding-left .35s, background .35s; }
-.svc:hover { padding-left: 1rem; background: linear-gradient(90deg, rgba(47,179,122,0.06), transparent); }
+.svc:hover { padding-left: 1rem; background: linear-gradient(90deg, rgba(60,107,50,0.06), transparent); }
 .svc-name { font-size: 1.35rem; font-weight: 700; color: var(--bone); }
 .svc-sub { margin-top: .2rem; font-size: .85rem; color: rgba(237,245,239,0.5); }
 .svc-time { font-family: 'Anton', sans-serif; font-size: 2rem; letter-spacing: .04em;
@@ -95,7 +95,7 @@ body { overflow-x: hidden; }
 /* ---- ministries grid ---- */
 .min { padding: 2.5rem 1.75rem; background: var(--ink); transition: background .4s, transform .4s; }
 .min::selection { background: var(--ember); }
-.min:hover { background: linear-gradient(180deg, rgba(47,179,122,0.12), rgba(10,19,15,1)); }
+.min:hover { background: linear-gradient(180deg, rgba(60,107,50,0.12), rgba(8,28,15,1)); }
 .min-title { font-size: 1.15rem; font-weight: 700; color: var(--bone); }
 .min:hover .min-title { color: var(--gold); transition: color .4s; }
 .min-body { margin-top: .6rem; font-size: .92rem; color: rgba(237,245,239,0.6); line-height: 1.55; }
@@ -104,7 +104,7 @@ body { overflow-x: hidden; }
 .footlink:hover { color: var(--gold); }
 
 /* ---- intro spark ---- */
-.intro-spark { box-shadow: 0 0 0 0 rgba(47,179,122,0.9); }
+.intro-spark { box-shadow: 0 0 0 0 rgba(60,107,50,0.9); }
 
 /* ---- scroll cue ---- */
 .scroll-cue { animation: floaty 2.6s ease-in-out infinite; }

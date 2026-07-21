@@ -1,5 +1,5 @@
-/* Revival Fire Ministry — motion & the living ember field.
-   Signature element: canvas embers rising through the Kalahari night,
+/* Field of Faith — motion & the drifting harvest light.
+   Signature element: canvas motes of golden light rising like chaff off a harvest field,
    with a GSAP-orchestrated hero and scroll-triggered reveals. */
 
 (() => {
@@ -38,7 +38,7 @@
       this.embers = Array.from({ length: this.count }, () => this.spawn(true));
     }
     spawn(initial = false) {
-      const palette = ['#2FB37A', '#E8C15A', '#0E7A52', '#8FE3BE'];
+      const palette = ['#DDB049', '#F0C874', '#3C6B32', '#F3E2A9'];
       return {
         x: Math.random() * this.w,
         y: initial ? Math.random() * this.h : this.h + 10,
@@ -131,7 +131,7 @@
   // Ignite intro → hero
   const intro = document.getElementById('intro');
   const tl = gsap.timeline();
-  tl.to('.intro-spark', { boxShadow: '0 0 60px 24px rgba(47,179,122,0.9)', scale: 3, duration: 0.7, ease: 'power2.out' })
+  tl.to('.intro-spark', { boxShadow: '0 0 60px 24px rgba(221,176,73,0.9)', scale: 3, duration: 0.7, ease: 'power2.out' })
     .to('#intro', { autoAlpha: 0, duration: 0.6, ease: 'power2.inOut', onComplete: () => intro && (intro.style.display = 'none') }, '+=0.15')
     // Hero headline: rise + fade, line by line
     .from('.hero-title .line', { yPercent: 115, opacity: 0, duration: 1, ease: 'power4.out', stagger: 0.12 }, '-=0.3')
